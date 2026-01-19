@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            /* background-color: #f0f8ff; */
+            
+            text-align: center;
+        }
+        .t_shadow_H1 {
+            font-size: 40px;
+            color: rgb(234, 63, 16);
+            text-shadow: 4px 4px 5px rgba(23, 210, 82, 0.5);
+
+        }
+        .t_shadow_p{
+           color: darkmagenta;
+            text-shadow: 1px 1px 3px gray; font-size: 20px; line-height: 1.5;
+        }
+        .b_shadow {
+            box-shadow: 6px 6px 8px rgb(69, 28, 28);
+
+        }
+        .drop_shadow {
+            filter: drop-shadow(7px 7px 5px rgb(125, 13, 125));
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(141, 141, 245, 0.3);
+            border-radius: 5px;
+            width: 520px;
+            text-align: center;
+            margin-left: 30%;
+        
+        }
+        .fontfamily_1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .fontfamily_2{
+            font-family: 'Arial Black', Gadget, sans-serif;
+        }
+        .fontfamily_3{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .font_weight{
+            font-weight: bold;
+        }
+        .f_font{
+            font: italic bold 30px 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="t_shadow_H1">
+        Happy Makar Sankranti!
+    </h1>
+    <p class="t_shadow_p fontfamily_3 f_font">
+        Makar Sankranti is a festival celebrated in India to mark the transition of the sun into the zodiac sign of
+        Capricorn (Makara). It usually falls on January 14th each year and is considered a harvest festival. The
+        festival is known by different names in various regions of India, such as Pongal in Tamil Nadu, Uttarayan in
+        Gujarat, and Maghi in Punjab. Makar Sankranti is celebrated with various customs and traditions, including kite
+        flying, bonfires, feasting on traditional sweets made from sesame seeds and jaggery, and taking holy dips in
+        rivers. It is a time of joy and thanksgiving for a bountiful harvest.
+    </p>
+    <div class="container">
+        <img src="images/—Pngtree—single happy colorful kite flying_20123698.png" alt="kitepng" height="500px"
+            width="500px" class=" drop_shadow">
+
+    </div>
+
+
+</body>
+
+</html>

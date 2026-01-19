@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px;
+            background-image: url(images/img4_backgroundImg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #75746f;
+
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+        }
+
+        h3 {
+            color: rgb(190, 88, 88);
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #000;
+            background-color: lightgray;
+            font-size: 18px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .box1 {
+            position: static;
+        }
+
+        .box2 {
+            position: relative;
+        }
+
+        .box3 {
+            position: absolute;
+        }
+
+        .box4 {
+            position: fixed;
+        }
+
+        .box5 {
+            position: sticky;
+        }
+
+        .container {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 20px;
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 20px;
+}
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 20px;
+}
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 20px;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Positioning</h1>
+
+    CSS positioning is about controlling the placement of elements within a web page.<br><br>
+
+    With CSS positioning, you can override the normal document flow. <br><br>
+
+    The CSS position Property <br>
+    The position property specifies the positioning type for an element. <br><br>
+
+    This property can have one of the following values: <br><br>
+
+    static - This is default <br>
+    relative<br>
+    fixed<br>
+    absolute<br>
+    sticky<br><br>
+    Elements are then positioned to their final location with the top, bottom, left, and right properties.<br><br>
+
+    <h2>CSS position: static</h2><br>
+    All HTML elements are positioned static by default.<br><br>
+
+    Static positioned elements are not affected by the top, bottom, left, and right properties.<br><br>
+
+    An element with position: static; is always positioned according to the normal flow of the page:<br><br>
+
+    This <div> element has position: static;<br>
+        Here is the CSS that is used:<br><br>
+
+        Example<br>
+        div.static {<br>
+        position: static;<br>
+        border: 3px solid #73AD21;<br>
+        }<br><br>
+        <h2>CSS position: relative</h2><br>
+        An element with position: relative; is positioned relative to its normal position in the document flow.<br><br>
+
+        Setting the top, right, bottom, and left properties will cause the element to be adjusted away from its normal
+        position. Other content will not be adjusted to fit into any gap left by the element.<br><br>
+
+        This <div> has position: relative, and is skewed 30 px to the right of its normal position<br>
+            Here is the CSS that is used:<br><br>
+
+            Example<br>
+            div.relative {<br>
+            position: relative;<br>
+            left: 30px;<br>
+            border: 3px solid #73AD21;<br>
+            }
+            <br><br>
+
+            <h2>CSS position: fixed</h2><br>
+            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the
+            same place even if the page is scrolled. The top, right, bottom, and left properties are used set the final
+            location of the element.<br><br>
+
+            A fixed element does not leave a gap in the page where it would normally have been located.<br><br>
+
+            This <div> element has position: fixed;<br>
+                Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:<br><br>
+
+                Example<br>
+                div.fixed {<br>
+                position: fixed;<br>
+                bottom: 0;<br>
+                right: 0;<br>
+                width: 300px;<br>
+                border: 3px solid #73AD21;<br>
+                }<br>
+                <h2>CSS position: absolute</h2><br>
+                An element with position: absolute; is positioned relative to the nearest positioned ancestor (with
+                position other than static).<br><br>
+
+                However; if an absolute positioned element has no positioned ancestors, it uses the document body, and
+                moves along with page scrolling.<br><br>
+
+                Note: Absolute positioned elements are removed from the normal document flow, and can overlap other
+                elements.<br><br>
+
+                Here is a simple example:<br><br>
+
+
+                Here is the CSS thatyou can use to try just create one html file create 2 divs and apply below css to
+                them:<br><br>
+
+                Example<br>
+                div.relative {<br>
+                position: relative;<br>
+                width: 400px;<br>
+                height: 200px;<br>
+                border: 3px solid green;<br>
+                }<br><br>
+
+                div.absolute {<br>
+                position: absolute;<br>
+                top: 80px;<br>
+                right: 0;<br>
+                width: 200px;<br>
+                height: 100px;<br>
+                border: 3px solid red;<br>
+                }<br>
+                <h2>CSS position: sticky</h2><br>
+                An element with position: sticky; toggles between a relative and fixed position, depending on the scroll
+                position.<br><br>
+
+                A sticky element is positioned relative until a certain scroll position is reached - then it "sticks" in
+                that place (like position:fixed).<br><br>
+
+
+                Note: You must specify at least one of the top, right, bottom or left properties, for sticky positioning
+                to work.<br><br>
+
+                In this example, when the sticky element reach the top of the page (top: 0), it sticks to this
+                position:<br><br>
+
+                Example<br>
+                div.sticky {<br>
+                position: sticky;<br>
+                top: 0;<br>
+                background-color: green;<br>
+                border: 2px solid #4CAF50;<br>
+                }<br><br>
+
+                <h3>below are the boxes to play with position you can inspect select box and change the position and
+                    apply other propperties as tryout</h3>
+
+                <div class="box box1">Position : Static</div>
+                <div class="box box2">Position : Relative</div>
+                <div class="box box3">Position : Absolute</div>
+                <div class="box box4">Position : Fixed</div>
+                <div class="box box5">Position : Sticky</div>
+
+                <h2>Images and postions</h2>
+                <div class="container">
+                    <img src="images/—Pngtree—new picsart editing background download_16261828.jpg" alt="Cinque Terre" width="500" height="300">
+                    <div class="topleft" style="color: white;">Top Left</div>
+                    <div class="topright" style="color: white;">Top Right</div>
+                    <div class="bottomleft" style="color: white;">Bottom Left</div>
+                    <div class="bottomright" style="color: white;">Bottom Right</div>
+                    <div class="center" style="color: white;">Center</div>
+                </div>
+
+</body>
+
+</html>

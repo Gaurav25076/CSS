@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            /* background-color: #f0f8ff; */
+            text-align: center;
+        }
+
+        .t_H1 {
+            font-size: 40px;
+            color: rgb(234, 63, 16);
+            text-shadow: 4px 4px 5px rgba(23, 210, 82, 0.5);
+
+        }
+
+        .card_1 {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid navy;
+            border-radius: 5px;
+            box-shadow: 6px 6px 8px rgb(62, 44, 44);
+        }
+
+        .t_format_p {
+            color: rgb(132, 73, 132);
+            font-size: 20px;
+            line-height: 1.5;
+            
+        }
+        .t_H2{
+            font-size: 30px;
+            color: rgb(16, 16, 110);
+            text-shadow: 3px 3px 4px rgba(100, 23, 182, 0.5);
+        }
+        .card_ex
+        {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: lightcyan;
+            width: 300px;
+            height: 200px;
+        }
+        .img_box{
+            width: 400px;
+            height: auto;
+            border: 5px solid rgb(6, 76, 117);
+            box-shadow: 6px 6px 8px rgb(69, 28, 28);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="t_H1">
+        CSS Box Model
+    </h1>
+    <!-- <div class="card_1"></div> -->
+    <img src="images/box_model.png" alt="">
+
+    <p class="t_format_p" style="text-align: left;">
+        The CSS Box Model defines how elements are sized, positioned, and rendered on a webpage. When a browser loads an
+        HTML document, it creates a DOM tree and assigns a box to each element. This box calculates the element's
+        dimensions and position relative to its parent or the root <html> element, ensuring accurate layout and spacing.
+        <br>
+
+        <a  style="color:rgb(69, 156, 233) ; text-decoration: none;">Content</a>: The area where text or other content is displayed. <br>
+        <a  style="color:rgb(0, 163, 101) ; text-decoration: none;">Padding</a>: Space between the content and the element's border. <br>
+        <a  style="color:rgba(232, 186, 107, 0.951) ; text-decoration: none;">Border</a>: A frame that wraps around the padding and content. <br>
+       <a  style="color:rgba(214, 137, 82, 0.951) ; text-decoration: none;">Margin</a>: Space between the element's border and neighbouring elements.
+    </p>
+    <h2 class="t_H2"> Borders</h2>
+    <p class="t_format_p" style="text-align: left;">
+        we can give different types of borders to box model element like below example <br>
+        ex:- border: border-width border-type border-color; <br>
+        and we can also can give diffrent types to border like solid, dashed, dotted, double, groove, ridge, inset, outset etc. to different side of box model element.with different colors to each side.
+    </p>
+    <div class="card_ex" style="border: 7px solid rgb(12, 235, 41);">
+        This is a box model card with padding, border, and margin. <br>
+        border type = solid
+    </div>
+    <div class="card_ex" style="border: 7px groove rgb(56, 158, 75);">
+        This is a box model card with padding, border, and margin. <br>
+        border type = groove
+    </div>
+    <div class="card_ex" style="border: 7px ridge rgb(91, 183, 240);">
+        This is a box model card with padding, border, and margin. <br>
+        border type = ridge
+    </div>
+    <div class="card_ex" style="border: 7px outset rgb(175, 175, 239);">
+        This is a box model card with padding, border, and margin. <br>
+        border type = outset
+    </div>
+    <h2 class="t_H2"> border-radius</h2>
+    <p class="t_format_p" style="text-align: left;">
+        we can give border different radius to each corner like below example <br>
+        ex:- border-radius: top-left top-right bottom-right bottom-left; <br>
+     
+    </p>
+    <img src="images/—Pngtree—new picsart editing background download_16261828.jpg" alt="" class="img_box" style="border-radius: 10px 5px 1px 20px ;">
+
+    <h2 class="t_H2">Padding</h2>
+    <p class="t_format_p" style="text-align: left;">
+    Padding is the space between the content of an element and its border. It creates breathing room around the content, enhancing readability and visual appeal. Padding can be set uniformly for all sides or individually for each side (top, right, bottom, left) using CSS properties like padding, padding-top, padding-right, padding-bottom, and padding-left.
+    ex:- padding: 20px 10px 15px 5px; = padding: top right bottom left<br>
+    padding: 20px; = padding to all sides <br>
+    padding: 10px 20px; = padding: top-bottom right-left <br>
+    </p>
+    <h2 class="t_H2">Margin</h2>
+    <p class="t_format_p" style="text-align: left;">
+        Margin is the space outside the border of an element that separates it from other elements. It helps create distance between elements, preventing them from appearing too close together. Margins can be set uniformly for all sides or individually for each side (top, right, bottom, left) using CSS properties like margin, margin-top, margin-right, margin-bottom, and margin-left.
+        ex:- margin: 20px 10px 15px 5px; = margin: top right bottom left<br>
+        margin: 20px; = margin to all sides <br>
+        margin: 10px 20px; = margin: top-bottom right-left <br>
+    </p>
+
+</body>
+
+</html>
