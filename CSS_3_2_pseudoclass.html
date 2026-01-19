@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo class</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container{
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: rgb(221, 240, 253);
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(19, 58, 142);
+            
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(236, 81, 81);
+        }
+        h1:hover {
+            color: rgb(57, 47, 165);
+            text-shadow: 4px 4px 4px rgb(53, 52, 52);
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            width: 300px;
+            height: 450px;
+            border-radius: 5px;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            background-color: rgb(189, 222, 249);
+        }
+        .card_img{
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+        }
+        .info{
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 26%;
+            overflow: hidden;
+        }
+        .btn{
+            padding: 10px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: rgb(100, 149, 237);
+            box-shadow: 4px 4px 4px rgba(139, 70, 70, 0.2);
+        }
+        
+        .link{
+            text-decoration: none;
+            color: black;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Digital-Zoo</h1>
+    <div class="container">
+        
+        <div class="card">
+            <img src="images/Cat.jfif" alt=" cat img" class="card_img">
+            <h2>Cat</h2>
+            <p class="info"><b>cat information:</b>The cat (Felis catus), also called domestic cat and house cat, is a small carnivorous mammal. It is an obligate carnivore, requiring a predominantly meat-based diet. Its retractable claws are adapted to killing small prey species such as mice and rats....</p>
+            <button class="btn"><a href="https://en.wikipedia.org/wiki/Cat" class="link">Show more Info</a></button>
+        </div>
+        <div class="card">
+            <img src="images/dog.jfif" alt=" dog img" class="card_img">
+            <h2>Dog</h2>
+            <p class="info"><b>dog information:</b> The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the gray wolf. Also called the domestic dog, it was selectively bred from a population of wolves during the Late Pleistocene by hunter-gatherers. Dogs were the first species to be domesticated over 14,000 years ago, before the development of agriculture.</p>
+            <button class="btn"><a href="https://en.wikipedia.org/wiki/Dog" class="link">Show more Info</a></button>
+        </div>
+        <div class="card">
+            <img src="images/rabbit.jfif" alt=" rabbit img" class="card_img">
+            <h2>Rabbit</h2>
+            <p class="info"><b>rabbit information:</b> Rabbits, or bunnies, are small mammals in the family Leporidae (which also includes the hares), which is in the order Lagomorpha (which also includes pikas). They are familiar throughout the world as a small herbivore, a prey animal, a domesticated form of livestock, and a pet, having a widespread effect on ecologies and cultures. </p>
+            <button class="btn"><a href="https://en.wikipedia.org/wiki/Rabbit" class="link">Show more Info</a></button>
+        </div>
+        <div class="card">
+            <img src="images/hamster.jfif" alt=" hamster img" class="card_img">
+            <h2>Hamster</h2>
+            <p class="info"><b>hamster information:</b> Hamsters are rodents (order Rodentia) belonging to the subfamily Cricetinae, which contains 19 species classified in seven genera.[1][2] They have become established as popular small pets.[3] The best-known species of hamster is the golden or Syrian hamster (Mesocricetus auratus), which is the type most commonly kept as a pet.</p>
+            <button class="btn"><a href="https://en.wikipedia.org/wiki/Hamster" class="link">Show more Info</a></button>
+        </div>
+    </div>
+</body>
+</html>
